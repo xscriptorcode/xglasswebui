@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+**X Glass Web UI** es una colección de componentes en React y TypeScript que representan íconos populares, herramientas de UI y símbolos de diseño, todos integrados en contenedores con estilo glassmorphism. Está pensada para portfolios, paneles de administración o cualquier proyecto moderno que requiera una estética cuidada y uniforme.
 
-## Getting Started
+## Características
 
-First, run the development server:
+- Construido con React y TypeScript
+- Estilo glassmorphism aplicado mediante Tailwind CSS
+- Componentes reutilizables y adaptables a diferentes tamaños
+- Compatibilidad con temas claro y oscuro
+- Organización modular por categorías: redes sociales, trabajo, diseño, herramientas, entre otros
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Estructura
+
+```
+/components/icons/
+├── SocialIconsGlass.tsx
+├── PortfolioIconsGlass.tsx
+├── DesignIconsGlass.tsx
+└── ...
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Cada archivo contiene exportaciones nombradas de componentes:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```tsx
+import { TwitterIconGlass, GithubIconGlass } from "@/components/icons/SocialIconsGlass";
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Uso
+* Copia los archivos de componentes a tu proyecto.
+* Asegúrate de tener configurado Tailwind CSS.
+* Importa y usa los íconos directamente:
 
-## Learn More
+``` tsx
+<LinkedInIconGlass />
+```
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Personalización
+* Puedes modificar propiedades como stroke="white" o bg-white/10 por variables CSS o clases Tailwind adaptadas a tu paleta.
+* Todos los íconos son escalables y tienen animación hover.
+* Si deseas tipografías personalizadas (por ejemplo, EB Garamond), puedes importarlas desde Google Fonts e integrarlas con clases CSS.
