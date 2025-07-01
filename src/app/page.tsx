@@ -1,4 +1,4 @@
-import { ComponentIconGlass } from "./components/icons/designGlassIcons";
+import { ComponentIconGlass, RulerIconGlass } from "./components/icons/designGlassIcons";
 import { FacebookIconGlass, GmailIconGlass, InstagramIconGlass } from "./components/icons/SocialGlassIcons";
 import ThemeToggle from "./components/icons/ThemeToggle";
 
@@ -6,7 +6,7 @@ import ThemeToggle from "./components/icons/ThemeToggle";
 export default function Home() {
   return (
       <main className="">
-        <div className="flex items-center justify-center ">
+        <div className="flex items-center justify-center pt-8">
         <ThemeToggle />
         </div>
       <h1 className="flex items-cenyer justify-center pt-8">Lines:</h1>
@@ -15,6 +15,7 @@ export default function Home() {
         <InstagramIconGlass />
         <ComponentIconGlass />
         <GmailIconGlass />
+        <RulerIconGlass />
       </div>
       </main>
   );
