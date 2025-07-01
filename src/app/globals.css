@@ -1,5 +1,33 @@
 @import "tailwindcss";
 
+
+@layer utilities {
+  @keyframes floatGlowFade {
+    0% {
+      transform: translateY(0) scale(0.8);
+      opacity: 0;
+    }
+    20% {
+      opacity: 0.3;
+    }
+    50% {
+      transform: translateY(-20px) scale(1.2);
+      opacity: 0.5;
+    }
+    80% {
+      opacity: 0.3;
+    }
+    100% {
+      transform: translateY(0) scale(0.8);
+      opacity: 0;
+    }
+  }
+
+  .animate-floatGlowFade {
+    animation: floatGlowFade linear infinite;
+  }
+}
+
 :root {
   --background: radial-gradient(
     circle at 50% 50%,
