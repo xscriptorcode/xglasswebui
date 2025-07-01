@@ -9,8 +9,9 @@ export function WhatsAppIconGlass() {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 448 512"
-        fill="white"
+        fill="currentColor"
         className="w-full h-full"
+        stroke="currentColor"
       >
         <path
           d="M380.9 97.1C339 55.1 283.3 32 224.6 32c-116.4 0-211 94.6-211 211
