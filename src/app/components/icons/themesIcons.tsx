@@ -1,20 +1,18 @@
 export function SunIcon() {
   return (
     <div
-      className="w-16 h-16 sm:w-20 sm:h-20 p-3 rounded-2xl backdrop-blur-md bg-white/10 border border-white/20 shadow-lg flex items-center justify-center transition hover:scale-105"
+      className="rounded-2xl backdrop-blur-3xl bg-white/10 border border-white/20 shadow-lg flex items-center justify-center transition hover:scale-105"
       title="Modo claro"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="100%"
-        height="100%"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
         strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="w-full h-full"
+        className="w-5 h-5 sm:w-6 sm:h-6"
       >
         <circle cx="12" cy="12" r="4" />
         <line x1="12" y1="2" x2="12" y2="4" />
@@ -30,23 +28,22 @@ export function SunIcon() {
   );
 }
 
+
 export function MoonIcon() {
   return (
     <div
-      className="w-16 h-16 sm:w-20 sm:h-20 p-3 rounded-2xl backdrop-blur-md bg-white/10 border border-white/20 shadow-lg flex items-center justify-center transition hover:scale-105"
+      className="rounded-2xl backdrop-blur-3xl bg-white/10 border border-white/20 shadow-lg flex items-center justify-center transition hover:scale-105"
       title="Modo oscuro"
     >
       <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="100%"
-        height="100%"
+         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
         strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="w-full h-full"
+        className="w-5 h-5 sm:w-6 sm:h-6"
       >
         <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z" />
       </svg>
